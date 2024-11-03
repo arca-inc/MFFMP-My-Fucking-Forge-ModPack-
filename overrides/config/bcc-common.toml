@@ -3,7 +3,7 @@
 [general]
 	#The CurseForge project ID for the modpack
 	#Range: > 0
-	modpackProjectID = 0
+	modpackProjectID = 1133668
 	#The name of the modpack
 	modpackName = "MFFMP (My Fucking Forge ModPack)"
 	#The version of the modpack
