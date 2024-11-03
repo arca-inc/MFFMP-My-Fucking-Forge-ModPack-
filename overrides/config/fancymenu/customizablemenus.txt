@@ -1,0 +1,14 @@
+type = customizablemenus
+
+net.zepalesque.redux.client.gui.screen.menu.ReduxTitleScreen {
+}
+
+com.aetherteam.aether.client.gui.screen.menu.AetherTitleScreen {
+}
+
+com.github.alexthe666.iceandfire.client.gui.IceAndFireMainMenu {
+}
+
+net.minecraft.client.gui.screens.TitleScreen {
+}
+
