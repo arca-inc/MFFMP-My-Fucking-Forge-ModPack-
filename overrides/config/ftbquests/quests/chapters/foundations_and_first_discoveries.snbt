@@ -1,0 +1,176 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "foundations_and_first_discoveries"
+	group: ""
+	icon: "minecraft:grass_block"
+	id: "650B41F90E3A5D88"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [""]
+			id: "3A235B44A91007FC"
+			rewards: [
+				{
+					count: 32
+					id: "12B9EFBF01A30B20"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "24F4B602B8CAC0D3"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+			]
+			subtitle: "Collect basic resources (wood, stone, coal)."
+			tasks: [
+				{
+					consume_items: false
+					count: 16L
+					id: "38524D2A07D3B401"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 16L
+					id: "44360F3E98E31DDB"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			title: "Gathering Essentials"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3A235B44A91007FC"]
+			id: "7E7238E2F02D78BD"
+			rewards: [{
+				id: "11BA854B13AF726C"
+				item: {
+					Count: 1b
+					id: "minecraft:red_bed"
+					tag: {
+						display: {
+							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"yellow\",\"text\":\"Old Fashion Bed\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Construct a small, safe shelter."
+			tasks: [{
+				count: 32L
+				id: "0AA17E94750A6691"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			title: "Building a Shelter"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E7238E2F02D78BD"]
+			id: "7E0382B93D8254F5"
+			rewards: [
+				{
+					count: 16
+					id: "57F4BC0ED9D94EC4"
+					item: "minecraft:charcoal"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "4B150CB163C4FA67"
+					item: "minecraft:cooked_rabbit"
+					type: "item"
+				}
+			]
+			subtitle: "Build your first furnace."
+			tasks: [{
+				consume_items: false
+				id: "2BED123178BF1CBA"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			title: "Furnace Crafting"
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7E0382B93D8254F5"]
+			id: "0CBE844213059AF9"
+			rewards: [
+				{
+					count: 4
+					id: "494523CB31AB6555"
+					item: "minecraft:chest"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1558A4A0BF7B1096"
+					item: "minecraft:item_frame"
+					type: "item"
+				}
+			]
+			subtitle: "Craft two chests to store items."
+			tasks: [{
+				consume_items: false
+				count: 2L
+				id: "729816CDE0C36B9E"
+				item: "minecraft:chest"
+				type: "item"
+			}]
+			title: "Basic Storage Solution"
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0CBE844213059AF9"]
+			id: "407454C7B5B977B7"
+			tasks: [{
+				advancement: "minecraft:husbandry/plant_seed"
+				criterion: ""
+				icon: "minecraft:wheat"
+				id: "6A8EC67302233DAE"
+				title: "Farm Setup"
+				type: "advancement"
+			}]
+			x: -3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["407454C7B5B977B7"]
+			id: "669160EFA7CA2CDA"
+			rewards: [{
+				count: 4
+				id: "47924977975D2C37"
+				item: "kubejs:loot_bag_common"
+				type: "item"
+			}]
+			subtitle: "Find a treasure."
+			tasks: [{
+				advancement: "lootr:1chest"
+				criterion: ""
+				icon: {
+					Count: 1b
+					id: "sophisticatedstorage:netherite_chest"
+					tag: {
+						woodType: "spruce"
+					}
+				}
+				id: "41CA2BA5374D8029"
+				title: "Open the Treasure Chest"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+	]
+	title: "Foundations and First Discoveries"
+}

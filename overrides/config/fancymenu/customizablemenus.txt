@@ -1,8 +1,5 @@
 type = customizablemenus
 
-net.zepalesque.redux.client.gui.screen.menu.ReduxTitleScreen {
-}
-
 com.aetherteam.aether.client.gui.screen.menu.AetherTitleScreen {
 }
 
@@ -10,5 +7,29 @@ com.github.alexthe666.iceandfire.client.gui.IceAndFireMainMenu {
 }
 
 net.minecraft.client.gui.screens.TitleScreen {
+}
+
+net.minecraft.client.gui.screens.inventory.InventoryScreen {
+}
+
+com.legacy.blue_skies.client.gui.screen.ArcsScreen {
+}
+
+top.theillusivec4.curios.client.gui.CuriosScreen {
+}
+
+com.aetherteam.aether.client.gui.screen.inventory.AccessoriesScreen {
+}
+
+com.hrznstudio.emojiful.gui.EmojifulChatScreen {
+}
+
+net.minecraft.client.gui.screens.OptionsScreen {
+}
+
+net.minecraft.client.gui.screens.PauseScreen {
+}
+
+net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen {
 }
 
