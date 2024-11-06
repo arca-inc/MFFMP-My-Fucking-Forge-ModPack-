@@ -5,6 +5,18 @@
 	group: ""
 	icon: "minecraft:grass_block"
 	id: "650B41F90E3A5D88"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 10.0d
+		hover: [ ]
+		image: "darkutils:block/head_golem"
+		rotation: 0.0d
+		width: 10.0d
+		x: 2.5d
+		y: -3.0d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -170,6 +182,358 @@
 			}]
 			x: 0.0d
 			y: 6.5d
+		}
+		{
+			description: [
+				"&eWelcome to MFFMP (My \"Funny\" Forge ModPack), a modpack crafted for thrill-seekers and dungeon delvers! Dive into a world filled with rich exploration opportunities, high-tech, and sprawling dungeons. This pack is experimental, and key features like quests and progression are actively being created and fine-tuned."
+				"&r"
+				"&lKnown Issues:"
+				"&r&cStability: Minor stability issues may occur; players are encouraged to report any crashes or conflicts."
+				"Balancing: Gameplay balance may require adjustments based on player feedback.&r"
+				""
+				"Feedback:"
+				"&lYour input is crucial! Please report any bugs, performance issues, or suggestions to help refine MFFMP for the official release.&r"
+			]
+			icon: "kubejs:loot_bag_legendary"
+			id: "2CB19B51BDD759F2"
+			rewards: [{
+				id: "5407F2A99411A3D3"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "hexagon"
+			size: 3.0d
+			tasks: [{
+				id: "779F08941DA07D28"
+				title: "Welcome !"
+				type: "checkmark"
+			}]
+			title: "&e&lWelcome To MFFMP    "
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			description: ["If you want to create a team for you and your friends, you can click on + in the menu behind the same icon of this quest or use the command &a&l/ftbteams party create <team name>&r Have Fun !"]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "ftbteams:textures/teams.png"
+				}
+			}
+			id: "1AA5484E5E38A1E0"
+			rewards: [{
+				id: "1376F4130F1B6480"
+				type: "xp"
+				xp: 10
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "6EE82353BA9B7A1E"
+				title: "Creating a Team"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"&a&l/home&r"
+				"Teleports you to your home location."
+				""
+				"&a&l/sethome [name]&r"
+				"Sets a home at your current location. You can specify a name for the home."
+				""
+				"&a&l/warp [name]&r"
+				"Teleports you to a predefined warp point."
+				""
+				"&a&l/spawn&r"
+				"Teleports you to the server spawn point."
+				""
+				"&a&l/tpa [player]&r"
+				"Sends a teleportation request to another player."
+				""
+				"&a&l/tpahere [player]&r"
+				"Requests another player to teleport to you."
+				""
+				"&a&l/back&r"
+				"Returns you to your previous location (before teleporting)."
+				""
+				"&a&l/kickme&r"
+				"Kicks yourself from the server. You will be disconnected and need to reconnect to rejoin. (This command is particularly useful if you encounter problems like being stuck in a block or an area where you can't move.)"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "jei:textures/gui/icons/config_button.png"
+				}
+			}
+			id: "5ED37D78FBFC3DF1"
+			rewards: [{
+				id: "79893E804BA85802"
+				type: "xp"
+				xp: 10
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "5A5B5354D28E9BD0"
+				title: "Useful Commands"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			description: ["&7&lQuests are optional! &r&fYou are free to play however you like. There is no obligation to follow the quests, and nothing prevents you from doing whatever you enjoy in the game. Feel free to explore, build, and adventure at your own pace!"]
+			icon: "ftbquests:book"
+			id: "63E4F11552846788"
+			rewards: [{
+				id: "4753E1CEDE04988A"
+				type: "xp"
+				xp: 10
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "753058411675C233"
+				title: "Quests"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["669160EFA7CA2CDA"]
+			description: [
+				"&7To begin your journey in tinkering, you’ll need to craft some basic materials. Create 32 pieces of Grout to get started with your Tinkers' tools and machines."
+				"&fThis quest will help you lay the groundwork for all your future tinkering projects!"
+			]
+			id: "29376BE4EA7A375D"
+			rewards: [
+				{
+					id: "0C58982B66E952CB"
+					item: {
+						Count: 1b
+						id: "tconstruct:tinker_station"
+						tag: {
+							texture: "minecraft:oak_planks"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5268DAE55165070B"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 4
+					id: "2AEED0CB40FB55F2"
+					item: "kubejs:loot_bag_common"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 32L
+				id: "0FD574542FD10BD2"
+				item: "tconstruct:grout"
+				title: "&6Crafting the Foundation"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["29376BE4EA7A375D"]
+			description: ["&l\"Now that you've got the basics down, it's time to craft your first Tinker’s tool! Use your Tool Station to create a simple tool like a sword, pickaxe, shovel, or hatchet.\"&r"]
+			id: "51E4248BCB2EBAA5"
+			rewards: [
+				{
+					id: "0B196901E88FFC85"
+					item: {
+						Count: 1b
+						id: "tconstruct:pickaxe"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+							tic_materials: [
+								"tconstruct:flint"
+								"tconstruct:flint"
+								"tconstruct:flint"
+							]
+							tic_modifiers: [
+								{
+									level: 3
+									name: "tconstruct:jagged"
+								}
+								{
+									level: 1
+									name: "tconstruct:pierce"
+								}
+							]
+							tic_persistent: { }
+							tic_stats: {
+								"tconstruct:attack_damage": 2.4750001f
+								"tconstruct:attack_speed": 1.2f
+								"tconstruct:durability": 72.25f
+								"tconstruct:harvest_tier": "minecraft:stone"
+								"tconstruct:mining_speed": 3.5f
+							}
+							tic_volatile_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "02CAF20D40CFBCB9"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "792EF16A76053439"
+					item: "kubejs:loot_bag_common"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: false
+				id: "607B595C952B62C4"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "tconstruct:modifiable/melee/weapon"
+					}
+				}
+				title: "Any #tconstruct:modifiable/melee/weapon"
+				type: "item"
+			}]
+			title: "&dBasic Tool Creation"
+			x: 5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["51E4248BCB2EBAA5"]
+			description: ["&lCraft a basic backpack to store your items.&r"]
+			id: "050EED319A223A5F"
+			rewards: [
+				{
+					id: "064BBE128AD4A295"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "5DE91E8238A693E3"
+					item: "kubejs:loot_bag_rare"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "349DE40EF110517D"
+				item: {
+					Count: 1b
+					id: "sophisticatedbackpacks:backpack"
+					tag: {
+						contentsUuid: [I;
+							1736031432
+							1419920539
+							-1458302489
+							468354573
+						]
+						inventorySlots: 27
+						upgradeSlots: 1
+					}
+				}
+				type: "item"
+			}]
+			title: "&bCraft a Backpack"
+			x: 8.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["050EED319A223A5F"]
+			description: ["&lOpen 100 loot chests to discover what's inside.&r"]
+			id: "2D68033E958C031B"
+			rewards: [
+				{
+					id: "33D79492522F3F7A"
+					type: "xp"
+					xp: 150
+				}
+				{
+					count: 8
+					id: "267A981DF7B74B52"
+					item: "kubejs:loot_bag_rare"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4E3E9B2C3DD39F20"
+				item: "lootr:trophy"
+				type: "item"
+			}]
+			title: "&b&lOpen 100 Loot Chests"
+			x: 10.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2D68033E958C031B"]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "emojiful:textures/26a0.png"
+				}
+			}
+			id: "40F44D2650BE5A74"
+			tasks: [{
+				id: "78B77F81A4267998"
+				type: "checkmark"
+			}]
+			title: "&e&lComing Soon"
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["40F44D2650BE5A74"]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "emojiful:textures/26a0.png"
+				}
+			}
+			id: "0324CB803F8764EA"
+			tasks: [{
+				id: "50466AF7AE80C184"
+				type: "checkmark"
+			}]
+			title: "&e&lComing Soon"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0324CB803F8764EA"]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "emojiful:textures/26a0.png"
+				}
+			}
+			id: "4161EC01E4D94E57"
+			tasks: [{
+				id: "53AC47C970E89A5B"
+				type: "checkmark"
+			}]
+			title: "&e&lComing Soon"
+			x: 4.5d
+			y: 0.0d
 		}
 	]
 	title: "Foundations and First Discoveries"
