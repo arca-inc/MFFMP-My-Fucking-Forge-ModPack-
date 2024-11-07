@@ -1,64 +1,87 @@
 // priority: 0
 
 LootJS.modifiers((event) => {
-  event
-    .addEntityLootModifier("minecraft:zombie")
-    .addLoot("kubejs:loot_bag_common", (loot) => loot.randomChance(0.05)); // 5% de chance
+  [
+    "minecraft:zombie",
+    "minecraft:skeleton",
+    "minecraft:enderman",
+    "minecraft:creeper",
+    "minecraft:slime",
+    "minecraft:spider",
+    "minecraft:cave_spider",
+    "minecraft:drowned",
+    "minecraft:guardian",
+    "minecraft:elder_guardian",
+    "minecraft:piglin_brute",
+    "minecraft:piglin",
+    "minecraft:zombified_piglin",
+    "minecraft:blaze",
+    "minecraft:wither_skeleton",
+    "minecraft:stray",
+    "mekanismadditions:baby_stray",
+    "mekanismadditions:baby_enderman",
+    "mekanismadditions:baby_skeleton",
+    "mekanismadditions:baby_creeper",
+    "mekanismadditions:baby_wither_skeleton",
+    "minecraft:witch",
+    "minecraft:zoglin",
+    "minecraft:zombie_villager",
+    "minecraft:ghast",
+  ].forEach((entity) => {
+    event
+      .addEntityLootModifier(entity)
+      .randomChance(0.15)
+      .addWeightedLoot([0, 4], [Item.of("kubejs:loot_bag_common")]);
+  });
 
-  event
-    .addEntityLootModifier("minecraft:skeleton")
-    .addLoot("kubejs:loot_bag_common", (loot) => loot.randomChance(0.05)); // 5% de chance
-
-  event
-    .addEntityLootModifier("minecraft:enderman")
-    .addLoot("kubejs:loot_bag_common", (loot) => loot.randomChance(0.05)) // 5% de chance
-    .addLoot("kubejs:loot_bag_rare", (loot) => loot.randomChance(0.01)); // 1% de chance
-
-  event
-    .addEntityLootModifier("minecraft:creeper")
-    .addLoot("kubejs:loot_bag_common", (loot) => loot.randomChance(0.05)); // 5% de chance
-
-  event
-    .addEntityLootModifier("minecraft:slime")
-    .addLoot("kubejs:loot_bag_common", (loot) => loot.randomChance(0.05)); // 5% de chance
-
-  event
-    .addEntityLootModifier("minecraft:spider")
-    .addLoot("kubejs:loot_bag_common", (loot) => loot.randomChance(0.05)); // 5% de chance
-
-  event
-    .addEntityLootModifier("minecraft:cave_spider")
-    .addLoot("kubejs:loot_bag_common", (loot) => loot.randomChance(0.05)); // 5% de chancem
+  [
+    "minecraft:enderman",
+    "minecraft:guardian",
+    "minecraft:elder_guardian",
+    "minecraft:piglin_brute",
+    "minecraft:piglin",
+    "minecraft:zombified_piglin",
+    "minecraft:blaze",
+    "minecraft:wither_skeleton",
+    "mekanismadditions:baby_wither_skeleton",
+    "minecraft:ghast",
+  ].forEach((entity) => {
+    event
+      .addEntityLootModifier(entity)
+      .randomChance(0.1)
+      .addWeightedLoot([0, 4], [Item.of("kubejs:loot_bag_rare")]);
+  });
 
   event
     .addEntityLootModifier("minecraft:ender_dragon")
-    .addLoot("kubejs:loot_bag_legendary", (loot) => loot.randomChance(0.8)) // 80% de chance
-    .addLoot("kubejs:loot_bag_mythic", (loot) => loot.randomChance(0.5)); // 50% de chance
+    .randomChance(0.5)
+    .addWeightedLoot([0, 4], [Item.of("kubejs:loot_bag_mythic")]);
 
   event
     .addEntityLootModifier("minecraft:wither")
-    .addLoot("kubejs:loot_bag_legendary", (loot) => loot.randomChance(0.8)) // 80% de chance
-    .addLoot("kubejs:loot_bag_mythic", (loot) => loot.randomChance(0.5)); // 50% de chance
+    .randomChance(0.5)
+    .addWeightedLoot([0, 2], [Item.of("kubejs:loot_bag_mythic")]);
 
   event
-    .addEntityLootModifier("botania:doppelganger")
-    .addLoot("kubejs:loot_bag_legendary", (loot) => loot.randomChance(0.8)) // 80% de chance
-    .addLoot("kubejs:loot_bag_mythic", (loot) => loot.randomChance(0.5)); // 50% de chance
+    .addEntityLootModifier("minecraft:ender_dragon")
+    .randomChance(0.8)
+    .addWeightedLoot([0, 4], [Item.of("kubejs:loot_bag_legendary")]);
 
   event
-    .addEntityLootModifier("bosses_of_mass_destruction:gauntlet")
-    .addLoot("kubejs:loot_bag_legendary", (loot) => loot.randomChance(1.0)) // 100% de chance
-    .addLoot("kubejs:loot_bag_mythic", (loot) => loot.randomChance(1.0)); // 100% de chance
+    .addEntityLootModifier("minecraft:wither")
+    .randomChance(0.8)
+    .addWeightedLoot([0, 2], [Item.of("kubejs:loot_bag_legendary")]);
 
-  event
-    .addEntityLootModifier("bosses_of_mass_destruction:lich")
-    .addLoot("kubejs:loot_bag_legendary", (loot) => loot.randomChance(1.0)) // 100% de chance
-    .addLoot("kubejs:loot_bag_mythic", (loot) => loot.randomChance(1.0)); // 100% de chance
-
-  event
-    .addEntityLootModifier("bosses_of_mass_destruction:obsidilith")
-    .addLoot("kubejs:loot_bag_legendary", (loot) => loot.randomChance(1.0)) // 100% de chance
-    .addLoot("kubejs:loot_bag_mythic", (loot) => loot.randomChance(1.0)); // 100% de chance
+  [
+    "bosses_of_mass_destruction:gauntlet",
+    "bosses_of_mass_destruction:lich",
+    "bosses_of_mass_destruction:obsidilith",
+  ].forEach((boss) => {
+    event
+      .addEntityLootModifier(boss)
+      .addWeightedLoot([0, 4], [Item.of("kubejs:loot_bag_legendary")])
+      .addWeightedLoot([0, 4], [Item.of("kubejs:loot_bag_mythic")]);
+  });
 });
 
 // player drop his head

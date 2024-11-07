@@ -8,7 +8,7 @@
   "forge:ingots/mithril": "null",
   "forge:ingots/iridium": "moremekanismprocessing:iridium_ingot",
   "forge:dusts/niter": "moremekanismprocessing:dust_niter",
-  "forge:ingots/chrome": "null",
+  "forge:ingots/chrome": "chicken_roost:ingot_chrome",
   "forge:ingots/titanium": "tinkers_reforged:titanium_ingot",
   "forge:rubber": "null"
 }
